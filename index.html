@@ -59,6 +59,19 @@
 		<h3 id="travel">Travel</h3>
 		<h3 id="adventure">Adventure</h3>
 		<h3 id="dogs">Dogs</h3>
-		<script>ellipse(800,600,50,70);</script>
+		draw = function() {
+		<script>		
+		    fill(0, 255, 68); // start color
+		    if (mouseIsPressed && mouseY>720 && mouseY <770 && mouseX > 900 &&mouseX < 980) {
+			fill(20, 163, 13);
+		    }
+		    rect(900, 720, 80, 50);  // the button
+
+		    // The button text
+		    fill(0, 0, 0);
+		    textSize(30);
+		    text("Press me!", 920, 710);
+		};
+		</script>
 	</body>	
 </html>
